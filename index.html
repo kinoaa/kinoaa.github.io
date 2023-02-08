@@ -21,7 +21,7 @@
       <input type="text" v-model="item.c">
     </div>
     <button @click="submit">提交</button>
-    <pre>{{this.list}}</pre>
+    <p v-for="(item,index) in list" :key="index">{{item}}</p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script>
